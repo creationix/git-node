@@ -2,7 +2,7 @@ var git = require('../.');
 
 // Create a filesystem backed bare repo
 var repo = git.repo(process.argv[2] || "test.git");
-repo.logWalk("HEAD", function (err, log) {
+repo.logWalk(process.argv[3] || "HEAD", function (err, log) {
   if (err) throw err;
   var shallow;
   return log.read(onRead);

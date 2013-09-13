@@ -13,7 +13,7 @@ console.log("Cloning %s to %s", url, path);
 
 var opts = {
   onProgress: function (progress) {
-    process.stdout.write(progress);
+    process.stderr.write(progress);
   }
 };
 
