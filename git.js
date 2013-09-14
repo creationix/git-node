@@ -4,20 +4,14 @@ var jsGit = require('js-git')(platform);
 var gitRemote = require('git-net')(platform);
 var fs = platform.fs;
 
-module.exports = {
-  repo: createRepo,
-  remote: createRemote
-};
+exports.version = require('js-git/package.json').version;
 
+exports.repo = createRepo;
 function createRepo(path) {
   return jsGit(fsDb(fs(path)));
 }
 
+exports.remote = createRemote;
 function createRemote(url) {
-  var repo = jsGit({});
-  var remote = gitRemote(url);
-  remote.ls = function (callback) {
-    return repo.lsRemote(remote, callback);
-  };
-  return remote;
+  return gitRemote(url);
 }
