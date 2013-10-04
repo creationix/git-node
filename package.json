@@ -1,6 +1,6 @@
 {
   "name": "git-node",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A convenience wrapper for js-git preconfigured for node.js",
   "main": "git.js",
   "repository": {
@@ -17,9 +17,9 @@
     "url": "https://github.com/creationix/git-node/issues"
   },
   "dependencies": {
-    "git-fs-db": "~0.1.1",
-    "git-net": "0.0.3",
+    "git-fs-db": "~0.2.0",
+    "git-net": "~0.0.3",
     "git-node-platform": "~0.1.4",
-    "js-git": "~0.5.0"
+    "js-git": "~0.5.2"
   }
 }
