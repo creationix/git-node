@@ -1,6 +1,6 @@
 var platform = require('git-node-platform');
 var fsDb = require('git-fs-db')(platform);
-var jsGit = require('js-git')(platform);
+var jsGit = require('js-git');
 var gitRemote = require('git-net')(platform);
 var fs = platform.fs;
 
