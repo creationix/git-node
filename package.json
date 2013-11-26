@@ -1,6 +1,6 @@
 {
   "name": "git-node",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "A convenience wrapper for js-git preconfigured for node.js",
   "main": "git.js",
   "repository": {
@@ -18,8 +18,8 @@
   },
   "dependencies": {
     "git-fs-db": "~0.2.0",
-    "git-net": "~0.0.3",
+    "git-net": "~0.0.4",
     "git-node-platform": "~0.1.4",
-    "js-git": "~0.5.2"
+    "js-git": "~0.6.1"
   }
 }
